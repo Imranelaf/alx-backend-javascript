@@ -1,8 +1,8 @@
 function appendToEachArrayValue(array, appendString) {
-  let idx=0;
-  for (let value of array) {
-      array[idx]=(appendString + value);
-      idx++;
+  let value=0;
+  for (let idx of array) {
+      array[value]=(appendString + idx);
+      value++
   }
 
   return array;
